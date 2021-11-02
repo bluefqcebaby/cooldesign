@@ -1,0 +1,145 @@
+@media (max-width:1140px) {}
+
+@media (max-width:1050px) {
+    .works {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cont {
+            .works__item {
+                margin-top: 70px;
+
+                &::after {
+                    top: 25%;
+                    left: 25%;
+                    max-width: 300px;
+                    line-height: 50px;
+                }
+            }
+        }
+
+        &__link {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width:810px) {
+
+    .header {
+        height: 700px;
+
+        &__text-slider {
+            height: 550px;
+        }
+
+        .menu {
+            &__item {
+                margin: 0 15px;
+            }
+        }
+    }
+
+    .whowe {
+        &__greenbox {
+            left: 210px;
+        }
+
+        &__img2 {
+            top: 120px;
+            left: 230px;
+        }
+
+        &__info-margin {
+            margin-right: 10px;
+        }
+    }
+
+    .services {
+        &__items {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        &__item {
+            margin-top: 10px;
+        }
+
+        .services__item+.services__item {
+            margin-left: 0;
+        }
+    }
+
+    .team {
+        .team__item+.team__item {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+
+}
+
+@media (max-width:460px) {
+    .header {
+        &__text-slider {
+            height: 400px;
+        }
+
+        .menu {
+            margin-top: 10px;
+            margin-left: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 20px;
+
+            &__item {
+                margin-top: 10px;
+                margin-left: 0;
+
+                &::after {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .whowe {
+        &__greenbox {
+            left: 40px;
+        }
+
+        &__img2 {
+            left: 75px;
+        }
+
+        &__img1 {
+            left: 5px;
+        }
+
+        &__info-margin {
+            margin-top: 0;
+        }
+
+        &__info {
+            color: rgba(#555252, 1);
+        }
+
+        &__box {
+            flex-direction: column;
+        }
+    }
+
+    .services {
+        &__item {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

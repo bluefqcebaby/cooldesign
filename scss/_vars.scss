@@ -1,0 +1,10 @@
+$green: #70BF73;
+$black: #252525;
+$open: 'Open Sans', sans-serif;
+$osw: 'Oswald', sans-serif;
+$maxWidth:1920;
+@mixin font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
